@@ -1,0 +1,76 @@
+@import '../../../index.scss';
+
+.footer {
+  width: 100%;
+  flex-shrink: 0;
+  background: #000;
+
+  &-heading-layout {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  &-heading-text {
+    width: auto;
+    margin: 0px 30%;
+    color: #FFF !important;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    @include respond(phone) {
+      width: 92%;
+      margin: 5px auto;
+      font-size: 30px;
+    }
+  }
+
+  &-heading-text-extra {
+    padding-left: 1%;
+    background: var(--pp2-purple, linear-gradient(214deg, #B75CFF 6.04%, #671AE4 92.95%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  &-apps-layout {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 20% 10% auto;
+    padding: 3%;
+    width: 80%;
+    border-radius: 10px;
+
+    @include respond(phone) {
+      gap: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //margin: 19% 0 auto;
+    }
+
+  }
+
+  &-apps {
+    display: flex;
+    padding: 2.083px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 12px;
+
+    @include respond(phone) {
+      width: 50px;
+    }
+  }
+
+
+}

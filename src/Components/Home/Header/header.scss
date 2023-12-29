@@ -1,0 +1,119 @@
+@import '../../../index.scss';
+
+.Header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: #B75CFF;
+    padding: 5px;
+
+
+    &-inner-container {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 54%;
+        margin: 10px auto;
+
+        @include respond(tablet) {
+            display: contents;
+        } 
+
+        @include respond(phone) {
+            display: contents;
+        }
+    }
+
+    &-name-label {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        @include respond(phone) {
+            justify-content: left;
+            margin: 12px 4px;
+            width: 24%;
+        }
+
+    }
+
+    &-button-name {
+        padding: 10px;
+        flex-shrink: 0;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--pp2-purple, linear-gradient(214deg, #B75CFF 6.04%, #671AE4 92.95%));
+        //background-color: #B75CFF 6.04;
+    }
+
+    &-name {
+        color: #FFF;
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &-button-init {
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.3px;
+    }
+
+    &-button-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        padding: 8px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background: var(--pp2-purple, linear-gradient(214deg, #B75CFF 6.04%, #671AE4 92.95%));
+    }
+
+    &-navigation-button-container {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5%;
+        width: 58%;
+
+        @include respond(phone) {
+            gap: 20px;
+            width: fit-content;
+
+        }
+    }
+
+    &-navigation-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.3px;
+
+        @include respond(phone) {
+
+        }
+    }
+
+    :hover {
+        color: black !important;
+    }
+
+}

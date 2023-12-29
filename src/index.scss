@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+///////////////////////////////////
+/// Variables
+
+$white: white;
+$light-white: #c6c6c6;
+$black: #000000;
+$secondary-black: #737373;
+$tertiary-black: #e9e9e9;
+
+$dark-bg: #111111;
+
+$watermark-white: rgba(221, 221, 221, 0.1);
+$watermark-black: rgba(222, 222, 222, 0.5);
+
+$primary-blue: #3662b4;
+// $primary-green: #408364;
+// $secondary-green: #6c9a85;
+
+//////////////////////////////////////////////
+//Media Queries
+
+// Break points -
+// 400px
+// 900px
+// 1200px
+
+/*
+phone
+tablet
+tablet landscape
+desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == tablet) {
+    @media (max-width: 950px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == phone) {
+    @media (max-width: 450px) {
+      @content;
+    }
+  }
+}
+
+@mixin Vibes {
+  font-family: "Great Vibes", cursive;
+}
+@mixin Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+@mixin Playfair {
+  font-family: "Playfair Display", serif;
+}
+@mixin Poppins {
+  font-family: "Poppins", sans-serif;
+}
+@mixin Roboto {
+  font-family: "Roboto", sans-serif;
+}
+@mixin Bodoni {
+  font-family: "Bodoni Moda", serif;
+}
+@mixin Monoton {
+  font-family: "Monoton", serif;
+}
+
+//////////////////////////////////
+/// Debugger
+
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
+
