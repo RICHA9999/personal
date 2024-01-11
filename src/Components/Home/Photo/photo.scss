@@ -18,14 +18,14 @@
         margin: 0px auto;
         @include Roboto;
 
-        @include respond(phone){
-            font-size: 24px;
-            margin: 38% 18% 0px 18%;
-        }
-
         @include respond(tablet){
             font-size: 24px;
             margin: 16% 18% 0px 18%;
+        }
+
+        @include respond(phone){
+            font-size: 24px;
+            margin: 38% 18% 0px 18%;
         }
     }
 
@@ -44,6 +44,7 @@
             margin: 15px 0;
         }
     }
+    
 
     &-button-one {
         height: fit-content;
@@ -56,6 +57,7 @@
         align-items: center;
         padding: 20px;
         transform: translateY(-260%);
+
 
         @include respond(tablet){
             transform: translateY(0rem);

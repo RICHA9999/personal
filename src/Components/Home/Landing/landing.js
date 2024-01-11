@@ -26,18 +26,16 @@ const Landing = () => {
 
   useEffect(() => {
     const delay = 3000; // 2 seconds
-
     const timer = setTimeout(() => {
       setPhotoLoaded(true);
     }, delay);
-
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className='landing-page'>
       <div className="landing-page-container">
-        <Header />
+        <Header  />
         {!photoLoaded && <Loader />}
       </div>
 

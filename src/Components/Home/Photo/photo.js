@@ -23,7 +23,7 @@ const Photo = () => {
         </div>
         <div className='photo-button-two'>
           <div className='photo-text'>
-            Full stack aspirit
+            Full stack and management aspirant
           </div>
         </div>
       </div>
