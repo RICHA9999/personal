@@ -64,9 +64,7 @@
             width: 100%;
             margin: 4%;
             }
-    }
-
-    :hover {
+    } :hover {
         color: #671AE4;
     }
 
@@ -83,6 +81,8 @@
         @include respond(phone){
             padding: 1%;
             line-height: 150%;
+            width: 100%;
+            margin: 10px;
          }
     }
 

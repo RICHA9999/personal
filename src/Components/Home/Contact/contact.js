@@ -47,9 +47,9 @@ const Contact = () => {
           <div className="contact-about-me-title">
             About Me.
           </div>
-          <span className="contact-about-me-layout">
+          <div className="contact-about-me-layout">
             A standout frontend developer mastered in React. With a knack for infusing creativity into interfaces, she transforms design concepts into captivating web applications. A true team player, seamlessly collaborates, elevating projects with her innovative mindset, dedication to excellence, and adept skills in fostering a collaborative development environment.
-          </span>
+          </div>
         </div>
         <div className="contact-about-me-buttons">
           <div className='contact-about-me-buttons-layout'>

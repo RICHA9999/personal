@@ -6,21 +6,6 @@ import Contact from '../Contact/contact.js';
 import Footer from '../Footer/footer.js';
 import Loader from '../Loader/loader.js';
 
-// const Landing = () => {
-//   return (
-//     <div className='landing-page'>
-//       <div className="landing-page-container">
-//         <Header />
-//       </div>
-//       <Photo />
-//       <Contact />
-//       <Footer />
-//     </div>
-
-
-//   );
-// };
-
 const Landing = () => {
   const [photoLoaded, setPhotoLoaded] = useState(false);
 

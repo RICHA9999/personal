@@ -11,14 +11,17 @@ const Header = () => {
 
   // Scroll to the 'About' section
   const gotoAbout = () => {
+    window.open('/about');
     };
 
   // Scroll to the 'Projects' section
-  const gotoProjects = () => {
+  const gotoResume = () => {
+    window.open('https://drive.google.com/file/d/1zZQ-8w-pDYnheDldDrPfLxkHbHJYz_5W/view?usp=sharing');
    };
 
   // Scroll to the 'Contact' section
   const gotoContacts = () => {
+    window.open('/contact');
     };
 
   return (
@@ -44,8 +47,8 @@ const Header = () => {
           <div className='Header-navigation-button' onClick={gotoAbout}>
           <div className='Header-text'> About</div>
           </div>
-          <div className='Header-navigation-button' onClick={gotoProjects}>
-          <div className='Header-text'> Projects</div>
+          <div className='Header-navigation-button' onClick={gotoResume}>
+          <div className='Header-text'> Resume</div>
           </div>
           <div className='Header-button-contact' onClick={gotoContacts}>
             <div className='Header-button-init'>
