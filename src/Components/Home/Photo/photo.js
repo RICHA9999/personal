@@ -13,7 +13,7 @@ const Photo = () => {
       <div className='photo-header'>
         I am
         <span className='photo-header photo-name'>
-          Richa. </span>I can help you create an impactful websites.
+          Richa. </span>I can help you create an impactful websites and manage your project development!
       </div>
       <div className="photo-content">
         <div className='photo-button-one'>
@@ -26,7 +26,7 @@ const Photo = () => {
         </div>
         <div className='photo-button-two'>
           <div className='photo-text'>
-           Full stack and management aspirant
+           Full stack and PMO aspirant
           </div>
         </div>
       </div>
